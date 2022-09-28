@@ -4,15 +4,15 @@
 
 1:  grub rescue > ls 
     
-    (hd0) (hd1) (hd2)
+    (hd0) (hd1) (hd2) (etc)
     
-2: grub rescue > ls (ud0)/boot/grub/x86_64-efi/normal.mod
+2: grub rescue > ls (ud0)/boot/grub/<x86_64-efi or i386-pc>/normal.mod
     
     error : unknown filesystem 
     
 3: grub rescue > set prefix=(hd0)/boot/grub
 
-4: grub rescue > insmod (hd0)/boot/grub/x86_64-efi/normal.mod
+4: grub rescue > insmod (hd0)/boot/grub/<x86_64-efi or i386-pc>/normal.mod
 
 5: grub rescue > normal
 
